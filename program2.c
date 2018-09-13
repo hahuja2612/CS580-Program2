@@ -37,7 +37,6 @@ int main(){
 
     printf("\n\t=========Testing myStrStr with '%s' and substring '%s'===========\n\n", haystack[1], needle[1]);
     result = myStrStr(haystack[1],needle[1],buffer);
-    printf("needle: %s, buffer: %s\n", needle[1], buffer );
     assert(result == 1 && strcmp(needle[1], buffer) == 0);
     printf("\n\t\t....Test Passed\n");
 
