@@ -27,10 +27,10 @@
 **_TOTAL: 20 points_**
 * **Part A: 12 points**
     * myStrStr function works with all test cases (12 points / 2 for each case)
-* **Part B: 8 points**
+* **Part B: 7 points**
     * Passes Counting 1’s test (2 points) (must pass all tests)
     * Passes Binary Tests (5 points total / 1 point each)
-* **Part C: 2 points**
+* **Part C: 1 points**
     * Follows requested program structure and submission format
 
 ### Guidelines
@@ -50,7 +50,7 @@ __In this program, you will learn to__:
 
 In the second program you will create a library file containing 4 functions. I have provided driver code that runs and tests your library code. You will need to create a second file that can be included in the driver code so the compiler can link them into an executable.
 
-To include a file in c, you use the preprocessing statement #include and the name of the file as a string at the top of your code. I have included a file called “mylib.h” in the driver code provided. This means you must write all of your code in a file called “mylib.h” and place it in the same directory as the provided driver code for the program to compile.
+To include a file in c, use the preprocessing statement `#include` and the name of the file as a string at the top of your code. I have included a file called “mylib.h” in the driver code provided. This means you must write all of your code in a file called “mylib.h” and place it in the same directory as the provided driver code for the program to compile.
 
 * For this part of the program you will implement your own version of the library function [strstr()](http://www.cplusplus.com/reference/cstring/strstr/), with the following function interface:
 int myStrStr (char  * haystack, char * needle, char * buffer);
@@ -67,7 +67,7 @@ int myStrStr (char  * haystack, char * needle, char * buffer);
 
 ## Part B: Bits and Bytes
 
-First you will write a function that counts the number of 1’s in the binary representation of an integer passed as a parameter to a function called countOnes() :bulb: _see driver code for exact interface_. You should return the number of 1s in the function’s parameter as an int.
+First you will write a function that counts the number of 1’s in the binary representation of an integer passed as a parameter to a function called `countOnes()` :bulb: _see driver code for exact interface_. You should return the number of 1s in the function’s parameter as an int.
 
 Next you will write a looping binary interpreter that creates an array representation of a binary value.
 * Write a function that uses **bit shifting** to store the binary representation of an integer in an array passed as a parameter. You will be given the size of the array and should make sure you fill out all elements in the array. To generate the array of values, you will need to use a bit mask and bitwise right shift.
@@ -87,7 +87,7 @@ Next you will write a looping binary interpreter that creates an array represent
     * program2.c
     * mylib.h
 
-:no_entry: Every program will have a required submission guidelines. Please read submission requirements carefully. Any deviations from specifications on future programs will result in point deductions or incomplete grades.
+:no_entry: Every program will have a required submission guidelines. Please read submission requirements carefully. Any deviations from specifications will result in point deductions or incomplete grades.
 
 ## README
 
@@ -105,6 +105,7 @@ Below is a reminder of the commands you need to use to submit your program.
 
 ```shell
 git status
+git add mylib.h
 git commit -a -m "commit message"
 git push
 ```
